@@ -149,4 +149,38 @@ class ArabicRomanNumeralsTest {
         // THEN
         assertEquals("L", resultat);
     }
+
+    @Test
+    void devrait_convertir_70_en_LXX() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 70;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("LXX", resultat);
+    }
+
+    @Test
+    void devrait_convertir_100_en_C() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 100;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("C", resultat);
+    }
+
+
+    @Test
+    void devrait_convertir_139_en_CXXXIX() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 139;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("CXXXIX", resultat);
+    }
 }
