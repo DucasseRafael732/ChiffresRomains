@@ -107,6 +107,17 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void devrait_convertir_38_en_XXXVIII() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 38;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("XXXVIII", resultat);
+    }
+
+    @Test
     void devrait_convertir_39_en_XXXIX() {
         ArabicRomanNumerals conversion = new ArabicRomanNumerals();
         // GIVEN
@@ -115,5 +126,27 @@ class ArabicRomanNumeralsTest {
         String resultat = conversion.convert(nbreArabe);
         // THEN
         assertEquals("XXXIX", resultat);
+    }
+
+    @Test
+    void devrait_convertir_40_en_XL() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 40;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("XL", resultat);
+    }
+
+    @Test
+    void devrait_convertir_50_en_L() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 50;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("L", resultat);
     }
 }
