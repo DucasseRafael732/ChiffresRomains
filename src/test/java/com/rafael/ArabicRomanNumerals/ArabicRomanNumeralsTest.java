@@ -16,4 +16,15 @@ class ArabicRomanNumeralsTest {
         // THEN
         assertEquals("I", resultat);
     }
+
+    @Test
+    void devrait_convertir_3_en_III() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 3;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("III", resultat);
+    }
 }
