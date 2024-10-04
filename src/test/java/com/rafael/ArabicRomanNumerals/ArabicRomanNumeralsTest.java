@@ -40,6 +40,17 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void devrait_convertir_4_en_IV() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 4;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("IV", resultat);
+    }
+
+    @Test
     void devrait_convertir_10_en_X() {
         ArabicRomanNumerals conversion = new ArabicRomanNumerals();
         // GIVEN
