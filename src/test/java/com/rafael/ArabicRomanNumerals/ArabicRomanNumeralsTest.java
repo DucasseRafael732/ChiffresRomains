@@ -96,7 +96,7 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
-    void devrait_convertir_12_en_X() {
+    void devrait_convertir_12_en_XII() {
         ArabicRomanNumerals conversion = new ArabicRomanNumerals();
         // GIVEN
         int nbreArabe = 12;
@@ -104,5 +104,16 @@ class ArabicRomanNumeralsTest {
         String resultat = conversion.convert(nbreArabe);
         // THEN
         assertEquals("XII", resultat);
+    }
+
+    @Test
+    void devrait_convertir_39_en_XXXIX() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 39;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("XXXIX", resultat);
     }
 }

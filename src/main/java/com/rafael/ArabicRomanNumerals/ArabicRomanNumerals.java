@@ -5,17 +5,17 @@ public class ArabicRomanNumerals {
     public String convert(int nbre) {
         StringBuilder resultat = new StringBuilder();
 
-        if (nbre >= 10) {
+        while (nbre >= 10) {
             resultat.append("X");
             nbre -= 10;
         }
 
-        if (nbre >= 9) {
+        while (nbre >= 9) {
             resultat.append("IX");
             nbre = 0;
         }
 
-        if (nbre >= 5) {
+        while (nbre >= 5) {
             resultat.append("V");
             nbre -= 5;
         }
