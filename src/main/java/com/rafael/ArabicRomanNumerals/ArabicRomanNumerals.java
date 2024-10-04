@@ -4,8 +4,8 @@ public class ArabicRomanNumerals {
 
     public String convert(int nbre) {
 
-        int[] valeursArabes = {100, 50, 40, 10, 9, 5, 4, 1};
-        String[] SymbolesRomains = {"C", "L", "XL", "X", "IX", "V", "IV", "I"};
+        int[] valeursArabes = {1000, 500, 100, 50, 40, 10, 9, 5, 4, 1};
+        String[] SymbolesRomains = {"M", "D", "C", "L", "XL", "X", "IX", "V", "IV", "I"};
 
         StringBuilder resultat = new StringBuilder();
 

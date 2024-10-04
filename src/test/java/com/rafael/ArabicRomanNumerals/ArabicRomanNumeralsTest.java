@@ -183,4 +183,15 @@ class ArabicRomanNumeralsTest {
         // THEN
         assertEquals("CXXXIX", resultat);
     }
+
+    @Test
+    void devrait_convertir_5689_en_CXXXIX() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 5689;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("MMMMMDCLXXXIX", resultat);
+    }
 }
