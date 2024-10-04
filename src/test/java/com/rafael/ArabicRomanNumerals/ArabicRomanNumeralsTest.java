@@ -51,6 +51,40 @@ class ArabicRomanNumeralsTest {
     }
 
     @Test
+    void devrait_convertir_5_en_V() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 5;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("V", resultat);
+    }
+
+    @Test
+    void devrait_convertir_6_en_VI() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 5;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("V", resultat);
+    }
+
+
+    @Test
+    void devrait_convertir_9_en_IX() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 9;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("IX", resultat);
+    }
+
+    @Test
     void devrait_convertir_10_en_X() {
         ArabicRomanNumerals conversion = new ArabicRomanNumerals();
         // GIVEN
