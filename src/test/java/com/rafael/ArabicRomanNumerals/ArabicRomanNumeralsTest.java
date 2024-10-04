@@ -92,6 +92,17 @@ class ArabicRomanNumeralsTest {
         // WHEN
         String resultat = conversion.convert(nbreArabe);
         // THEN
-        assertEquals("III", resultat);
+        assertEquals("X", resultat);
+    }
+
+    @Test
+    void devrait_convertir_12_en_X() {
+        ArabicRomanNumerals conversion = new ArabicRomanNumerals();
+        // GIVEN
+        int nbreArabe = 12;
+        // WHEN
+        String resultat = conversion.convert(nbreArabe);
+        // THEN
+        assertEquals("XII", resultat);
     }
 }
