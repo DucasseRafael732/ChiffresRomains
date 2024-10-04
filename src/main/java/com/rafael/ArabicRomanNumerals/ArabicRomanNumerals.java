@@ -1,17 +1,15 @@
 package com.rafael.ArabicRomanNumerals;
 
-
 public class ArabicRomanNumerals {
 
     public String convert(int nbre) {
+        StringBuilder resultat = new StringBuilder();
 
-        if(nbre == 1){
-            return "I";
-        }
-        else if(nbre == 3){
-            return "III";
-        }
-
-        return null;
+            
+            for (int i = 0; i < nbre; i++) {
+                resultat.append("I");
+            }
+        return resultat.toString();
     }
+
 }
